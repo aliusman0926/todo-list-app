@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div className={styles.body}>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-6">
-        <div className="bg-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md">
+        <div className="bg-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md pa-6">
           <h1 className="text-4xl font-bold text-white mb-8 text-center">To-Do List</h1>
           <form onSubmit={addTask} className="flex mb-8">
             <input
@@ -51,7 +51,7 @@ export default function Home() {
               value={newTask}
               onChange={(e) => setNewTask(e.target.value)}
               placeholder="Add a new task"
-              className="flex-1 p-4 bg-gray-700 text-white border-none rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition text-lg"
+              className=" flex-1 p-4 bg-gray-700 text-white border-none rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition text-lg"
             />
             <button
               type="submit"
